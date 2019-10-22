@@ -1,6 +1,7 @@
 #!/bin/bash
 
-DOTFILES_REPO_DIR_PATH="$(realpath "${0}" | xargs dirname)"
+# Get the directory of the script (https://stackoverflow.com/a/56694491/3088888)
+DOTFILES_REPO_DIR_PATH=$(cd `dirname $0` && pwd)
 
 echo "Linking .vimrc"
 # Will create a symbolic link from ~/.vimrc to ~/.dotfiles/files/.vimrc
