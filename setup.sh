@@ -4,5 +4,7 @@
 DOTFILES_REPO_DIR_PATH=$(cd `dirname $0` && pwd)
 
 echo "Linking .vimrc"
-# Will create a symbolic link from ~/.vimrc to ~/.dotfiles/files/.vimrc
 ln --symbolic "$DOTFILES_REPO_DIR_PATH/files/.vimrc" ~/.vimrc
+
+echo "Linking .gitconfig"
+ln --symbolic "$DOTFILES_REPO_DIR_PATH/files/.gitconfig" ~/.gitconfig
