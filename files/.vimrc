@@ -22,6 +22,10 @@ set expandtab " On pressing tab, insert spaces
 set autoindent
 " }}}
 
+" Navigation {{{
+set mouse=a " handles all mouse modes
+" }}}
+
 " UI Layout {{{
 set number          " show line numbers
 set numberwidth=5
