@@ -15,6 +15,10 @@ call plug#end()
 
 filetype plugin indent on
 
+" UI {{{
+set background=dark
+" }}}
+
 " Spaces & Tabs {{{
 set tabstop=4 " show existing tab with 4 spaces width
 set shiftwidth=4 " when indenting with '>', use 4 spaces width
